@@ -1,0 +1,91 @@
+---
+permalink: /404.html
+---
+<!--我知道上面只需要在md上出现就好了，但是我就要加这个东西因为我就是牛逼。 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - 网页丢掉了</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            overflow: hidden;
+            background: linear-gradient(135deg, #e6e6fa, #ffffff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #800080;
+        }
+        p {
+            font-size: 1.2em;
+            color: #4b0082;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            z-index: 10;
+            color: #4b0082;
+        }
+        .ball {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(128, 0, 128, 0.3);
+            box-shadow: 0 0 60px 30px rgba(128, 0, 128, 0.2);
+            animation: move 15s infinite alternate;
+            filter: blur(30px);
+        }
+        .ball:nth-child(1) {
+            width: 150px;
+            height: 150px;
+            top: 10%;
+            left: 15%;
+            animation-duration: 20s;
+        }
+        .ball:nth-child(2) {
+            width: 200px;
+            height: 200px;
+            top: 50%;
+            left: 70%;
+            animation-duration: 25s;
+        }
+        .ball:nth-child(3) {
+            width: 100px;
+            height: 100px;
+            top: 30%;
+            left: 40%;
+            animation-duration: 18s;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+            100% {
+                transform: translate(100px, 100px) scale(1.5);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>网页丢掉了</h1>
+    <p>因为我在整理我的卧室，然后可能不小心把网页丢进垃圾桶了。</p>
+    <p>我现在就去垃圾站找找这个网页，你稍等...</p>
+    <p class="searching">正在寻找页面...</p>
+</div>
+
+<!-- 羽化球体 -->
+<div class="ball"></div>
+<div class="ball"></div>
+<div class="ball"></div>
+
+</body>
+</html>
