@@ -1,0 +1,88 @@
+# ===========================================
+# Site Information Settings
+# ===========================================
+
+# Author info
+author: LumiCornX
+  name: 悠悠狮羝
+  link: https://lumicornx.xyz/
+
+# Site creation time
+since: 2024
+
+# Custom your favicon.ico in `site/source`
+favicon: /favicon.ico
+
+# Set feed link (false | default | your feed link)
+# false: disable
+# default: use `atom.xml`, generator for `hexo-generator-feed`
+rss: default
+
+language: zh
+
+# ===========================================
+# Menu Settings
+# ===========================================
+menu:
+  Home: /
+  Archive: /archives
+  About: /about
+
+# ===========================================
+# Widget Settings
+# ===========================================
+# widget function
+# false: disable
+# widget_custom: custom your widget
+#   title: your widget title
+#   content: Add your html code in here. Example: <p>Hello, I am Frost</p>
+widget:
+  Tags: true
+  Categories: true
+
+widget_custom:
+  title: LumiCornX
+  content: <p>你好.</P>
+
+# ===========================================
+# Theme Settings
+# ===========================================
+# theme styling
+# color: Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
+theme:
+  color: Default
+  fancybox: false
+
+# ===========================================
+# Third Party Services Settings
+# ===========================================
+
+# Baidu Analytics
+baidu_analytics:
+  enable: true
+  key: 05d869f9b9abb50b8e4717a38a616135
+
+
+# Duoshuo
+duoshuo_shortname:
+# Disqus
+disqus_shortname:
+# utterances
+utterances:
+  enable: true
+  repo: meannoharm/meannoharm.github.io
+  issueTerm: pathname
+  theme: github-light
+
+
+# ===========================================
+# Version
+# ===========================================
+version: 1.1
+
+# ===========================================
+# Footer Settings
+# ===========================================
+license:
+  name: CC-BY-NC-SA 4.0
+  link: https://creativecommons.org/licenses/by-nc-sa/4.0/
