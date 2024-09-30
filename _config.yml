@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
+title: LumiDocs
+subtitle: '悠悠狮羝的文档仓库'
 description: ''
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: LumiCornX
+language: zh
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://docs.lumicornx.xyz/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
