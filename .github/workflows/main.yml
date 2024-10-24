@@ -5,6 +5,7 @@ on:
     branches:
       - main  # 当推送到 main 分支时触发工作流
 
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,6 +16,14 @@ jobs:
         run: |
           git clone https://github.com/xugaoyi/vuepress-theme-vdoing.git
           cd vuepress-theme-vdoing
+          
+      - name: Commit files
+        run: |
+          git config --local user.email "you@example.com"
+          git config --local user.name "Your Name"
+          git add .
+          git commit -m "Update from GitHub Actions"
+          git push origin main
 
       # 安装依赖
       - name: Install dependencies
