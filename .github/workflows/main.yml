@@ -1,0 +1,27 @@
+name: Initialize and Deploy VuePress
+
+on:
+  push:
+    branches:
+      - main  # 当推送到 main 分支时触发工作流
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 克隆 vuepress-theme-vdoing 主题仓库
+      - name: Clone theme repository
+        run: |
+          git clone https://github.com/xugaoyi/vuepress-theme-vdoing.git
+          cd vuepress-theme-vdoing
+
+      # 安装依赖
+      - name: Install dependencies
+        run: |
+          npm install
+
+      # 开发模式运行（如果你只是想初始化并测试，可以跳过此步骤）
+      - name: Run development server
+        run: |
+          npm run dev
