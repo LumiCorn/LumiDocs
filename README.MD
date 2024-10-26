@@ -12,9 +12,6 @@
 
 
 
- [文档](https://doc.xugaoyi.com/)  |
- [效果](https://xugaoyi.com/)  |
- [本仓库的gitee镜像](https://gitee.com/xugaoyi/vuepress-theme-vdoing)
 
 <
 <p align="center" style="color: #999; font-size:13px;">（进入赞助商扫码注册可为本项目作者充电~）</p>
