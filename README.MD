@@ -16,15 +16,7 @@
  [效果](https://xugaoyi.com/)  |
  [本仓库的gitee镜像](https://gitee.com/xugaoyi/vuepress-theme-vdoing)
 
-<br/>
-<p align="center" style="color: #999;">
-  赞助商
-</p>
-<p align="center">
-<!-- <a href="http://apifox.cn/a103xugaoyi" target="_blank"><img src="https://jsd.cdn.zzko.cn/gh/xugaoyi/blog-gitalk-comment@master/img/Apifox-860x320.ic7tz1417sw.png" alt="赞助商" style="width: 400px;border-radius: 2px;"></a> -->
-<a href="http://apifox.cn/a103xugaoyi" target="_blank"><img src="https://jsd.cdn.zzko.cn/gh/xugaoyi/blog-gitalk-comment@master/img/441669861566_.2bedplbm21hc.jpg" alt="赞助商" style="width: 400px;border-radius: 2px;"></a>
-</p>
-
+<
 <p align="center" style="color: #999; font-size:13px;">（进入赞助商扫码注册可为本项目作者充电~）</p>
 
 ## 介绍
