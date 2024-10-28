@@ -4,6 +4,8 @@
 import { resolve } from 'path'
 import { defineConfig4CustomTheme, UserPlugins } from 'vuepress/config'
 import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
+import { defineUserConfig } from 'vuepress';
+
 import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
@@ -365,3 +367,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     '.vuepress/config/htmlModules.ts',
   ]
 })
+
+// 尝试引入Font Awesome图标包
+export default defineUserConfig({
+  head: [
+    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css' }]
+  ],
+});
