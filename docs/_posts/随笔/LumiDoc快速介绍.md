@@ -6,7 +6,7 @@ permalink: /pages/introduction
 categories:
   - 随笔
 tags:
-  - 开发者
+  - 介绍
 ---
 
 你好！我是悠悠狮羝LumiCornX！
