@@ -54,7 +54,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       { text: '更多', link: '/more/', },
       { text: '关于', link: '/about/',
         items: [
-          { text: "LumiDoc快速介绍', link: '/introduction/',  }
+          { text: "LumiDoc快速介绍', link: '/introduction/' }
         ],
       },
       {
