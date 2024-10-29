@@ -105,7 +105,7 @@ import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
   //         (adsbygoogle = window.adsbygoogle || []).push({});
   //     </script>
   //     `,
-  // }
+   }
 
 
 // const htmlModule = {
