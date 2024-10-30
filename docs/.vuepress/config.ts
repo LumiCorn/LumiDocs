@@ -196,8 +196,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       ]
     });
   });
-  `
-]
+],
 
   // 插件配置
   plugins: <UserPlugins>[
