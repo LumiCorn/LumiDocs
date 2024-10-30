@@ -188,12 +188,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         });
       });
     `]
-  ]
-  }
-} //这个括号是给谁用的？我找了半天了
-                                                           
-
-  
+    ]
+    
   // 插件配置
   plugins: <UserPlugins>[
     [
