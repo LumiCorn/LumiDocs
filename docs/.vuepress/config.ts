@@ -195,8 +195,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       ]
     });
   })],
-  ]
-}
+  ]}),
     
     
 
