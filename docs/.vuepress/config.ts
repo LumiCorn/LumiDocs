@@ -195,7 +195,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       ]
     });
   })],
-  ]}),
+  ]}) //现在这几个括号全在一起了。我为了这三个括号被抱错了多少次。
     
     
 
