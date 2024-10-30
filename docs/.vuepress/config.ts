@@ -185,7 +185,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     [
   'script',
   {},
-  `
   document.addEventListener("DOMContentLoaded", function() {
     renderMathInElement(document.body, {
       delimiters: [
