@@ -157,7 +157,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: 'https://github.com/LumiCorn'
       }
     },
-
+  },
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue },
   head: [
     ['link', { rel: 'icon', href: '/img/logoicon.ico' }], // favicon
@@ -188,7 +188,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         });
       });
     `]
-    ]
+    ],
     
   // 插件配置
   plugins: <UserPlugins>[
