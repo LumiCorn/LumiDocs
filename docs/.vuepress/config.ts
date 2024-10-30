@@ -169,6 +169,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ['link', { rel: 'icon', href: '/img/logoicon.ico' }], //favicons，资源放在public文件夹
         // 尝试添加 Font Awesome 的 CSS 链接
     ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css' }],
+        // 添加LaTeX数学公式的支持（采用KaTeX驱动）
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css' } ],
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js' } ],
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js' } ],
     [
       'meta',
       {
@@ -177,17 +181,23 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
-    ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
-    // [
-    //   'script',
-    //   {
-    //     'data-ad-client': 'ca-pub-7828333725993554',
-    //     async: 'async',
-    //     src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
-    //   },
-    // ], // 网站关联Google AdSense 与 html格式广告支持（你可以去掉）
-  ],
-
+    ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题
+    [
+  'script',
+  {},
+  `
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false},
+        {left: "\$begin:math:text$", right: "\\$end:math:text$", display: false},
+        {left: "\$begin:math:display$", right: "\\$end:math:display$", display: true}
+      ]
+    });
+  });
+  `
+]
 
   // 插件配置
   plugins: <UserPlugins>[
