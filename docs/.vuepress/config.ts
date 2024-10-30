@@ -165,23 +165,24 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   },
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, 
-    head: [
-    ['link', { rel: 'icon', href: '/img/logoicon.ico' }], // favicon，资源放在public文件夹
+innerHTML: {
+  head: [
+    ['link', { rel: 'icon', href: '/img/logoicon.ico' }], // favicon
 
-    // 尝试添加 Font Awesome 的 CSS 链接
+    // Font Awesome 的 CSS
     ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css' }],
 
-    // 添加LaTeX数学公式的支持（采用KaTeX驱动）
+    // KaTeX 的 CSS 和脚本
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css' }],
     ['script', { src: 'https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js' }],
     ['script', { src: 'https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js' }],
 
     // SEO和其他元数据
     ['meta', { name: 'keywords', content: '博客,markdown,教程,AI,工具,闲聊,个人简介,分享,文档,世界' }],
-    ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
+    ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题
 
-    // 添加 KaTeX 渲染的脚本
+    // JavaScript脚本：添加 KaTeX 渲染
     ['script', {}, `
       document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement(document.body, {
@@ -197,6 +198,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   ]
 }
 
+  
   // 插件配置
   plugins: <UserPlugins>[
     [
