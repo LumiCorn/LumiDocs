@@ -194,8 +194,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {left: "\$begin:math:display$", right: "\\$end:math:display$", display: true}
       ]
     });
-  })
-]
+  })],
+  ]
+    
+    
 
   // 插件配置
   plugins: <UserPlugins>[
