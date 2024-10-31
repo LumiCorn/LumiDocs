@@ -181,22 +181,24 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ['script', {}, `
       function renderLatex() {
         if (typeof renderMathInElement !== 'undefined') {
-        renderMathInElement(document.body, {
-          delimiters: [
-            {left: "$$", right: "$$", display: true},
-            {left: "$", right: "$", display: false},
-            {left: "\\begin{math:text}", right: "\\end{math:text}", display: false},
-            {left: "\\begin{math:display}", right: "\\end{math:display}", display:true}
-          ]
-        });
-      }
-    };
+          renderMathInElement(document.body, {
+            delimiters: [
+           {left: "$$", right: "$$", display: true},
+          {left: "$", right: "$", display: false},
+          {left: "\\begin{math:text}", right: "\\end{math:text}", display: false},
+          {left: "\\begin{math:display}", right: "\\end{math:display}", display:true}
+        ]
+      });
+    }
+  };
 
-      document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(renderLatex, 100); // 页面加载后延迟100毫秒渲染 
-      document.addEventListener("swup:contentReplaced", renderLatex); // 监听页面切换事件
-    `]
-    ],
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(renderLatex, 100); // 页面加载后延迟100毫秒渲染
+  });
+
+  document.addEventListener("swup:contentReplaced", renderLatex); // 监听页面切换事件
+`]
+],
     
   // 插件配置
   plugins: <UserPlugins>[
