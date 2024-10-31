@@ -177,7 +177,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // JavaScript脚本：添加 KaTeX 渲染
     ['script', {}, `
-      document.addEventListener("DOMContentLoaded", function() {
+      window.onload = function() {
         renderMathInElement(document.body, {
           delimiters: [
             {left: "$$", right: "$$", display: true},
