@@ -197,6 +197,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   });
 
   document.addEventListener("swup:contentReplaced", renderLatex); // 监听页面切换事件
+
+    // VuePress内容更新时重新渲染
+  if (typeof __VUEPRESS__ !== 'undefined') {
+    __VUEPRESS__.events.on('contentUpdated', renderLatex);
+  }
 `]
 ],
     
