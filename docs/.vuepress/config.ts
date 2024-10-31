@@ -14,7 +14,7 @@ const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
   // theme: 'vdoing', // 使用npm主题包
    theme: resolve(__dirname, '../../vdoing'), // 使用本地主题包
-  clientRootMixin: resolve(__dirname, './clientRootMixin.js'), //载入Latex
+  
 
   locales: {
     '/': {
