@@ -1,0 +1,20 @@
+name: Cache Cleanup
+# 手动触发。当有新的配置文件被加入的时候，这个执行文件可以删除原有的缓存并重新生成一个新的。
+on:
+  workflow_dispatch: 
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Clear yarn cache
+        run: yarn cache clean
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build and Deploy
+        run: yarn build
