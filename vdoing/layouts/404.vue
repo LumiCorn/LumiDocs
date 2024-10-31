@@ -39,6 +39,6 @@ export default {
   margin 3rem auto
   padding 1.5rem
   span
-    font-size 6rem
+    font-size 4rem
     color $accentColor
 </style>
