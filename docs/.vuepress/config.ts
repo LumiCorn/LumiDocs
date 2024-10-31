@@ -192,7 +192,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       }
     };
 
-      document.addEventListener("DOMContentLoaded", renderLatex); // 页面加载时渲染
+      document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(renderLatex, 100); // 页面加载后延迟100毫秒渲染 
       document.addEventListener("swup:contentReplaced", renderLatex); // 监听页面切换事件
     `]
     ],
