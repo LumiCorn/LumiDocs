@@ -179,7 +179,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // JavaScript脚本：添加 KaTeX 渲染
     ['script', {}, `
-      document.addEventListener("DOMContentLoaded", function() {
+      function renderLatex() {
+        if (typeof renderMathInElement !== 'undefined') {
         renderMathInElement(document.body, {
           delimiters: [
             {left: "$$", right: "$$", display: true},
@@ -188,7 +189,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             {left: "\\begin{math:display}", right: "\\end{math:display}", display:true}
           ]
         });
-      });
+      }
+    };
+
+      document.addEventListener("DOMContentLoaded", renderLatex); // 页面加载时渲染
+      document.addEventListener("swup:contentReplaced", renderLatex); // 监听页面切换事件
     `]
     ],
     
