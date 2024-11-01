@@ -58,6 +58,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
+        text: 'Doc开发者',
+        linkt: '/dev/',
+        items: [
+          { text: '标准性规范', link: '/dev/standard-norm' },
+          ],
+      },
+      {
         text: '索引',
         link: '/archives/',
         items: [
@@ -66,6 +73,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '归档', link: '/archives/' },
         ],
       },
+
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
