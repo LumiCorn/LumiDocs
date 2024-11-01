@@ -194,9 +194,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           renderMathInElement(document.body, {
             delimiters: [
            {left: "$$", right: "$$", display: true},
-          {left: "$", right: "$", display: false},
-          {left: "\\begin{math:text}", right: "\\end{math:text}", display: false},
-          {left: "\\begin{math:display}", right: "\\end{math:display}", display:true}
+           {left: "$", right: "$", display: false},
+           {left: "\\begin{math:text}", right: "\\end{math:text}", display: false},
+           {left: "\\begin{math:display}", right: "\\end{math:display}", display:true}
         ]
       });
     }
