@@ -206,6 +206,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   document.addEventListener("swup:contentReplaced", renderLatex); // 监听页面切换事件
   document.addEventListener("vuepress:page-update", renderLatex); // 监听页面更新（其实我不知道哪句话是有用的）
+  document.addEventListener("vuepress:page-updated", renderLatex);
   document.addEventListener("vuepress:pageChanged", renderLatex); // VuePress特有的页面事件
 
     // VuePress内容更新时重新渲染
@@ -331,6 +332,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   markdown: {
     lineNumbers: true,
     extractHeaders: ['h2', 'h3', 'h4', 'h5', 'h6'], // 提取标题到侧边栏的级别，默认['h2', 'h3']
+    extendMarkdown: (md) => { md.use(require('markdown-it-katex'));},
   },
   
 
