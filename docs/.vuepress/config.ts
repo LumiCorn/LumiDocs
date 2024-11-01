@@ -61,7 +61,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: 'Doc开发者',
         linkt: '/dev/',
         items: [
-          { text: '标准性规范', link: '/dev/standard-norm' },
+          { text: '标准性规范', link: '/dev/standard-norm/' },
           ],
       },
       {
