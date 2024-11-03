@@ -132,7 +132,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://cdn.jsdelivr.net/gh/LumiCorn/Pic-BedLumiCornX_Avatar.jpeg',
+      avatar: 'https://i1.hdslb.com/bfs/face/d2bd2399798b01e828ecddb71ca88a1ed6000bc0.jpg@240w_240h_1c_1s_!web-avatar-space-header.avif',
       name: '悠悠狮羝LumiCornX',
       slogan: '常年混迹于B站与GitHub的游戏区搞笑UP主',
     },
