@@ -47,12 +47,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
      {
-        text: '工具3',
-        link: '/trial/',
+        text: '实用工具',
+        link: '/tools/',
         items: [
           { text: '（建设中）', link: '/pages/9a7ee40fc232253e/' },
         ],
       },
+      { text: '书架', link: '/book/', },
       { text: '更多', link: '/more/', },
       { text: '关于', link: '/about/',
         items: [
