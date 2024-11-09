@@ -54,6 +54,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       { text: '书架', link: '/book/', },
+      { 
+        text: '游戏Wiki', 
+        link: '/game/',
+        items: [
+          { text: '恐鬼症Phasmophobia', link: '/game/phasmophobia/start/'},
+        ],
+      },
       { text: '更多', link: '/more/', },
       { text: '关于', link: '/about/',
         items: [
