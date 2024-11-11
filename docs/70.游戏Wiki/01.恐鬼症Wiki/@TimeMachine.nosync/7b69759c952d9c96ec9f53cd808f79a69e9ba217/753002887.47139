@@ -5,7 +5,8 @@ categories:
   - 游戏Wiki
 tags:
   - 恐鬼症
-sidebar: true
+titleTag: Wiki
+sidebar: auto
 article: false
 comment: true
 editLink: true

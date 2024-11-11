@@ -6,9 +6,9 @@ categories:
 tags:
   - 恐鬼症
 titleTag: Wiki
-sidebar: true
-article: false
-comment: true
+sidebar: auto
+article: true
+comment: trye
 editLink: true
 ---
 
