@@ -1,0 +1,37 @@
+name: Clean @TimeMachine.nosync folders
+
+# 该执行文件用于删除Taio（Apple设备独占的Markdown编辑器App）
+# 在编辑时会产生的叫做“@TimeMachine.nosync”文件夹，该文件夹
+# 对于该项目而言没有用处，且影响到整仓库的整洁性。
+# 该文件可选是否删除。
+on:
+  push:
+    branches:
+      - main  
+  pull_request:
+    branches:
+      - main  
+
+jobs:
+  clean-n-upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Remove @TimeMachine.nosync folders
+        run: |
+          find . -type d -name "@TimeMachine.nosync" -exec rm -rf {} +
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Remove @TimeMachine.nosync folders" || echo "No changes to commit"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.ACCESS_TOKEN }} # 注意这里的Token是ACCESS_TOKEN
