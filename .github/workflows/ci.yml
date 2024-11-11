@@ -57,7 +57,7 @@ jobs:
           node-version: ${{ matrix.node-version }} # 版本
       - name: Build-and-deploy # 步骤3
         run: |
-          remote_addr=https://${user_name}:${{secrets.ACCESS_TOKEN}}@${remote_addr}
+          remote_addr=`git remote get-url --push origin`
           commit_info=`git describe --all --always --long`
           user_name=`git log -1 --pretty=format:'%an'`
           user_email=`git log -1 --pretty=format:'%ae'`
