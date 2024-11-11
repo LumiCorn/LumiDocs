@@ -20,3 +20,6 @@ urls.txt
 
 # mac
 .DS_Store
+
+# 历史文件记录（可能是Taio的特殊文件）
+@TimeMachine.nosync
