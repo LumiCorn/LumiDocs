@@ -12,6 +12,30 @@ env: # 设置环境变量
   TZ: Asia/Shanghai # 时区（设置时区可使页面中的`最近更新时间`使用该时区时间）
 
 jobs:
+
+  clear-useless-folders:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Remove @TimeMachine.nosync folders
+        run: |
+          find . -type d -name "@TimeMachine.nosync" -exec rm -rf {} +
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Remove @TimeMachine.nosync folders" || echo "No changes to commit"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.ACCESS_TOKEN }} # 注意这里的Token是ACCESS_TOKEN
+          
   build: # 自定义名称
     runs-on: ubuntu-latest # 运行在虚拟机环境ubuntu-latest
 
