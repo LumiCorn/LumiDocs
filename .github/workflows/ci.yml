@@ -27,11 +27,8 @@ jobs:
       - name: Commit changes
         run: |
           remote_addr=`git remote get-url --push origin`
-          commit_info=`git describe --all --always --long`
-          user_name=`git log -1 --pretty=format:'%an'`
-          user_email=`git log -1 --pretty=format:'%ae'`
-          git config user.name ${user_name}
-          git config user.email ${user_email}
+          git config user.name "${user_name}"
+          git config user.email "${user_email}"
           git add .
           git commit -m "Remove @TimeMachine.nosync folders" || echo "No changes to commit"
 
