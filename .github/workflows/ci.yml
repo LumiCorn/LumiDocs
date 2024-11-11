@@ -34,7 +34,7 @@ jobs:
           git config user.name "${user_name}"
           git config user.email "${user_email}"
           git add .
-          git commit -m "Remove @TimeMachine.nosync folders" || echo "No changes to commit"
+          git commit -m "Remove @TimeMachine.nosync folders" || echo "No changes to commit."
 
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
