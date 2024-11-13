@@ -1,0 +1,217 @@
+---
+title: 鬼魂类型
+permalink: /game/phasmophobia/ghosttype
+categories:
+  - 游戏Wiki
+tags:
+  - 恐鬼症
+sidebar: true
+article: false
+comment: true
+editLink: false
+---
+
+::: note
+下面将会详细解释每一个类型的鬼的特征，这些特征或许不会出现在游戏内的记事本里。建议收藏该页面。你可以找到左侧的分类栏里快速定位到想要了解的鬼魂。
+:::
+
+在了解鬼魂类型前，你需要先区分两个概念：
+- [<i class="fas fa-book"></i> “鬼魂事件”定义](/game/phasmophobia/ghostevent)
+- [<i class="fas fa-book"></i> “互动”定义](/game/phasmophobia/ghostinteraction)
+
+
+------
+# 鬼魂列表
+
+- [<i class="fas fa-book"></i> 女妖](/game/phasmophobia/banshee)
+- [<i class="fas fa-book"></i> 恶魔](/game/phasmophobia/demon)
+- [<i class="fas fa-book"></i> 御灵](/game/phasmophobia/goryo)
+- [<i class="fas fa-book"></i> 寒魔](/game/phasmophobia/hantu) 
+- [<i class="fas fa-book"></i> 巨灵](/game/phasmophobia/jinn)
+- [<i class="fas fa-book"></i> 梦魇](/game/phasmophobia/mare)
+- [<i class="fas fa-book"></i> 鬼婴](/game/phasmophobia/myling)
+- [<i class="fas fa-book"></i> 赤鬼](/game/phasmophobia/oni)
+- [<i class="fas fa-book"></i> 幻影](/game/phasmophobia/phantom)
+- [<i class="fas fa-book"></i> 骚灵](/game/phasmophobia/poltergeist)
+- [<i class="fas fa-book"></i> 亡魂](/game/phasmophobia/revenant)
+- [<i class="fas fa-book"></i> 暗影](/game/phasmophobia/shade)
+- [<i class="fas fa-book"></i> 魂魄](/game/phasmophobia/spirit)
+- [<i class="fas fa-book"></i> 魅影](/game/phasmophobia/wraith)
+- [<i class="fas fa-book"></i> 妖怪](/game/phasmophobia/yokai)
+- [<i class="fas fa-book"></i> 幽灵](/game/phasmophobia/yurei)
+- [<i class="fas fa-book"></i> 怨灵](/game/phasmophobia/onryo)
+- [<i class="fas fa-book"></i> 孪魂](/game/phasmophobia/thetwins)
+- [<i class="fas fa-book"></i> 雷魂](/game/phasmophobia/raiju)
+- [<i class="fas fa-book"></i> 幻妖](/game/phasmophobia/obake)
+- [<i class="fas fa-book"></i> 拟魂](/game/phasmophobia/themimic)
+- [<i class="fas fa-book"></i> 魔洛伊](/game/phasmophobia/moroi)
+- [<i class="fas fa-book"></i> 雾影](/game/phasmophobia/deogen)
+- [<i class="fas fa-book"></i> 刹耶](/game/phasmophobia/thaye)
+
+------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 👻魔洛伊Moroi
+- 玩家理智值低时移速加快
+- 玩家在游戏区域内会更快降低理智值
+
+**弱点：** 熏香使其失明的时间会延长50%
+### 特征
+猎杀时圣木的有效时间为7.5秒
+
+平均理智值越低，猎杀时移速越快：
+
+| 平均理智值（%）  | 猎杀时移速（米/秒）  |
+|---|---|
+| 大于等于45  |  1.5 |
+|  40-45 |  1.583 |
+|  35-40 |  1.66 |
+|  30-35 |  1.749 |
+| 25-30  |  1.832 |
+|  20-25 |  1.915 |
+| 15-20  |  1.998 |
+| 10-15  |  2.081 |
+| 5-15 | 2.164 |
+| 0-5 | 2.25 |
+
+猎杀时当玩家与魔洛伊对视时，会使其移速加快：
+- ⚠️**注意：当平均理智为0%时，玩家与魔洛伊对视，会使其移速提高到3.7米/秒，远超玩家移速！**
+
+
+
+
+### 技能
+会对目标玩家释放“诅咒”：
+- 可以同时诅咒多名玩家
+- 同一玩家的诅咒不会叠加
+- 被诅咒的玩家在**调查区域内理智下降速度为原先的2倍**。
+- 被诅咒的玩家即使在**灯光或火光旁无法阻止理智下降**
+- **调查区域外**的被诅咒玩家理智下降暂停。
+- 醒脑丸（药丸）可以解除诅咒，但诅咒可以再次被施加。
+
+
+
+
+
+------
+
+# 🌬️雾影Deogen
+- 猎杀时能定位玩家
+- 猎杀并向玩家移动时移速很快
+
+**弱点：** 在玩家附近时移速很慢
+### 特征
+玩家在雾影的1米范围内时使用通灵盒时，会有33%几率触发雾影的特殊呼吸声（3-4秒持续时间）（**如果出现了呼吸声则其绝对是雾影**）
+
+猎杀时的移速受到玩家与雾影间距离所决定：
+- 距离玩家2.5米内，移速为0.4米/秒
+- 距离玩家6米外，移速为3米/秒
+
+雾影会**每隔几秒获取玩家精确位置**，也就是说<u>雾影知道玩家的位置，但是并不是实时的，而是每隔几秒知道一次位置。</u>
+
+玩家一定会在猎杀时看见雾影
+
+雾影的闪烁频率较高，与一般鬼魂相比有具体如下值（实际测量值）
+
+|  👻 |  闪烁现身时间 | 闪烁隐形时间  |  每次闪烁用时 |
+|---|---|---|---|
+| 雾影  |  0.2-0.3 <Badge text="误差值0.02"/> | 0-0.01  | 0.3-0.6 <Badge text="误差值0.02"/>   |
+| 其他鬼魂  |  0.08-0.3 | 0.1  |  0.3-1.0 |
+> “每次闪烁用时”指现身一次与隐身一次的总时长（相当于来回闪烁一次）
+
+
+### 猎杀条件
+
+平均理智限值为40%
+
+
+
+------
+
+# 👻刹耶Thaye
+- 玩家首次进入游戏区域时会非常活跃，移速较快
+
+**弱点：** 随游戏时间的推移，其能力会越来越弱，降低攻击欲望与互动频率
+
+### 特征
+刹耶拥有“**老化**”的特征：
+- 每**1-2分钟**会触发一次“老化”（幅度未知，可用通灵版观察年龄变化）
+- 只有玩家与刹耶在**同一房间内才会成功老化**，否则老化失败
+- 如果老化失败，会在**30秒后再次尝试**老化
+- 每局游戏**只能老化10次**
+
+随着刹耶老化，其部分参数也会发生变化：
+
+|  行为 | 初期状态  |  老化调整数 |  终期状态 |
+|---|---|---|---|
+| 猎杀理智限值  |  75% |  -6% |  15% |
+| 猎杀时移速  |  2.75m/s |  -0.175m/s | 1m/s  |
+|  相对互动/鬼魂事件发生概率 | 200%  |  -15% | 50%  |
+> “相对互动/鬼魂事件发生概率”指与其他一般鬼魂相比，其在这类事件下发生的可能性倍数。
+
+⚠️注意：在**拟魂**模仿刹耶时，起初会随机选择年龄，如果符合老化条件则**更换模仿对象**。
+
+
+
+
+
+
+
+------
+
+以上是所有鬼魂的类型与详细特征。下一篇将会介绍对于一些特有名词的定义。
+
+::: center
+
+[<i class="fas fa-home"></i> 回到Wiki导航界面](/game/phasmophobia/start/#📍快速导航)
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
